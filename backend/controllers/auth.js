@@ -12,7 +12,7 @@ export const register = (req, res) => {
 		const hash = bcrypt.hashSync(req.body.password, salt);
 		const q =
 			"insert into users (`username`, `email`, `password`, `name`) values (?,?,?,?)";
-		const vals = [req.body.username, hash, req.body.email, req.body.name];
+		const vals = [req.body.username, req.body.email, hash, req.body.name];
 		db.query(q, vals, (err, data) => {
 			if (err) return res.status(500).json(err);
 			return res.status(200).json("User created successfully");
