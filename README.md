@@ -60,9 +60,16 @@ This project is a social media application built using Node.js for the backend a
 - **MySQL**: An open-source relational database management system.
 - **JSON Web Tokens (JWT)**: A compact, URL-safe means of representing claims to be transferred between two parties.
 
-### Other Requirements:
+### Setting Up Environment Variables
 
-- **Yarn**: A package manager.
+For the application to function correctly, you need to create a `.env` file in the root directory of the project and add your database credentials. Here's an example of how you can set it up:
+
+```bash
+DB_HOST=your_database_host
+DB_USER=your_database_user
+DB_PASSWORD=your_database_password
+DB_NAME=your_database_name
+```
 
 ## Starting
 
@@ -73,17 +80,32 @@ git clone https://github.com/MohamedAbdelfattah022/Social-Media-Platform.git
 
 ```bash
 # Access
-cd social-media-app
+cd social-media-Platform
 ```
 
 ```bash
-# Install dependencies
-yarn
+# Access Backend directory
+cd backend
 ```
 
 ```bash
-# Run the server
-yarn start
+# Access Frontend directory
+cd front
+```
+
+```bash
+# Install dependencies in both directories
+npm i
+```
+
+```bash
+# Run the backend server
+npm start
+```
+
+```bash
+# Run the frontend server
+npm run dev
 ```
 
 The Server will initialized in `http://localhost:8800`
