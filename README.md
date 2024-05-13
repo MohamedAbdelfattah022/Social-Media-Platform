@@ -55,6 +55,7 @@ This project is a social media application built using Node.js for the backend a
 
 ### Backend Requirements:
 
+- **Node.js**: A JavaScript runtime environment that executes JavaScript code outside a web browser.
 - **Express.js**: A web application framework for Node.js, designed for building web applications and APIs.
 - **MySQL**: An open-source relational database management system.
 - **JSON Web Tokens (JWT)**: A compact, URL-safe means of representing claims to be transferred between two parties.
