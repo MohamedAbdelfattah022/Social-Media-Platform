@@ -55,7 +55,7 @@ This project is a social media application built using Node.js for the backend a
 
 ### Backend Requirements:
 
-- **Express**: A web application framework for Node.js, designed for building web applications and APIs.
+- **Express.js**: A web application framework for Node.js, designed for building web applications and APIs.
 - **MySQL**: An open-source relational database management system.
 - **JSON Web Tokens (JWT)**: A compact, URL-safe means of representing claims to be transferred between two parties.
 
@@ -88,8 +88,6 @@ yarn start
 The Server will initialized in `http://localhost:8800`
 <br>
 The Client will initialized in `http://localhost:5173`
-
-&#xa0;
 
 ## Team
 
