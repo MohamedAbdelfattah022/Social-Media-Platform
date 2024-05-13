@@ -62,7 +62,7 @@ This project is a social media application built using Node.js for the backend a
 
 ### Setting Up Environment Variables
 
-For the application to function correctly, you need to create a `.env` file in the root directory of the project and add your database credentials. Here's an example of how you can set it up:
+For the application to function correctly, you need to create a `.env` file in the backend root directory and add your database credentials. Here's an example of how you can set it up:
 
 ```bash
 DB_HOST=your_database_host
