@@ -1,7 +1,7 @@
 <div align="center" id="top"> 
 </div>
 
-<h1 align="center">Social Media App</h1>
+<h1 align="center">Linkup - Social Media App</h1>
 
 <p align="center">
   <a href="#about">About</a> &#xa0; | &#xa0; 
