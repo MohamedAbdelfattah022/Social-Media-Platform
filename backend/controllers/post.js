@@ -9,8 +9,10 @@ export const getPosts = (req, res) => {
 	jwt.verify(token, "secretkey", (err, userData) => {
 		if (err) return res.status(403).json("Token not valid");
 		const q = `
-			select p.*, u.id as userId, name profilePic from posts as p join users as u on (u.id = p.userId)
-			left join relationships as r on (p.userId = r.followedUserId) where r.followerUserId = ? or p.userId = ?
+			select p.*, u.id as userId, name, profilePic 
+			from posts as p join users as u on (u.id = p.userId)
+			left join relationships as r on (p.userId = r.followedUserId) 
+			where r.followerUserId = ? or p.userId = ?
 			order by p.createdAt desc
 			`;
 		db.query(q, [userData.id, userData.id], (err, data) => {
