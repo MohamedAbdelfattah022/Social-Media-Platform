@@ -10,8 +10,14 @@ import cors from "cors";
 import multer from "multer";
 
 const app = express();
+
+const corsOptions = {
+	origin: "http://localhost:5173",
+	credentials: true,
+};
+
 app.use(express.json());
-app.use(cors());
+app.use(cors(corsOptions));
 app.use(cookieParser());
 
 const storage = multer.diskStorage({
