@@ -53,7 +53,7 @@ export const deletePost = (req, res) => {
 		if (err) return res.status(403).json("Token not valid");
 		const q = "delete from posts where `id`=? and `userId`=?";
 
-		const vals = [req.params.is, userData.id];
+		const vals = [req.params.id, userData.id];
 
 		db.query(q, vals, (err, data) => {
 			if (err) return res.status(500).json(err);
